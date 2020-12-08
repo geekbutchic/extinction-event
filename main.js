@@ -23,10 +23,16 @@ for (const opacity of ghostMode) {
 }
 
 
+const disappear = document.querySelectorAll('.feature4 row img')
 
+const seeYaLater = (event) => {
+    const goodyByeDino = event.target 
+    goodyByeDino.style.display = 'none';
+}
 
-
-
+for (const ghost of disappear) {
+    ghost.addEventListener('click', seeYaLater);
+}
 
 
 
